@@ -67,8 +67,8 @@ router.delete("/api/headlines/:id", function(req,res){
     });
 });
 
-rouer.post("/api/notes", function(req, res){
-    notescontroller.save(req.body, function(data){
+router.post("/api/notes", function(req, res){
+    notesController.save(req.body, function(data){
         res.json(data);
     });
 });
